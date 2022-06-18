@@ -33,5 +33,7 @@
   "exclude": [
     "dist",
     "node_modules",
+    "postcss.config.js",
+    "tailwind.config.js",
   ],
 }
