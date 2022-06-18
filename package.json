@@ -29,11 +29,9 @@
     "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.12",
     "vite-plugin-pages": "^0.24.2",
-    "vite-plugin-pwa": "^0.12.0",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg": "^0.20.1",
     "vite-ssg-sitemap": "^0.2.7",
-    "vue-tsc": "^0.34.17",
-    "workbox-window": "^6.5.3"
+    "vue-tsc": "^0.34.17"
   }
 }

@@ -26,13 +26,12 @@
     ],
     "paths": {
       "~/*": [
-        "src/*"
+        "src/*",
       ]
     }
   },
   "exclude": [
     "dist",
     "node_modules",
-    // "cypress"
-  ]
+  ],
 }
