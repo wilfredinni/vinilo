@@ -13,7 +13,8 @@ import Markdown from "vite-plugin-md";
 import Prism from "markdown-it-prism";
 import LinkAttributes from "markdown-it-link-attributes";
 
-const markdownWrapperClasses = "prose prose-sm m-auto text-left";
+const markdownWrapperClasses =
+  "prose prose-xl m-auto text-left dark:text-gray-200 mt-10";
 
 // https://vitejs.dev/config/
 export default defineConfig({
