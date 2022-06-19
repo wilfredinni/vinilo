@@ -26,4 +26,8 @@ const { t } = useI18n();
   >
     {{ t("index.about") }}
   </router-link>
+
+  <div class="prose prose-xl">
+    <p>test</p>
+  </div>
 </template>

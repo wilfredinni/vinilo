@@ -9,6 +9,11 @@ import { HeadlessUiResolver } from "unplugin-vue-components/resolvers";
 import AutoImport from "unplugin-auto-import/vite";
 import { VitePWA } from "vite-plugin-pwa";
 import VueI18n from "@intlify/vite-plugin-vue-i18n";
+import Markdown from "vite-plugin-md";
+import Prism from "markdown-it-prism";
+import LinkAttributes from "markdown-it-link-attributes";
+
+const markdownWrapperClasses = "prose prose-sm m-auto text-left";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -56,6 +61,22 @@ export default defineConfig({
       dts: "src/components.d.ts",
 
       resolvers: [HeadlessUiResolver()],
+    }),
+
+    Markdown({
+      wrapperClasses: markdownWrapperClasses,
+      headEnabled: true,
+      markdownItSetup(md) {
+        // https://prismjs.com/
+        md.use(Prism);
+        md.use(LinkAttributes, {
+          matcher: (link: string) => /^https?:\/\//.test(link),
+          attrs: {
+            target: "_blank",
+            rel: "noopener",
+          },
+        });
+      },
     }),
 
     // https://github.com/antfu/vite-plugin-pwa

@@ -16,6 +16,9 @@ const { availableLocales, locale } = useI18n();
 
       <base-theme-toggle />
     </div>
-    <RouterView />
+
+    <div class="flex items-center justify-center space-x-3">
+      <RouterView />
+    </div>
   </main>
 </template>
