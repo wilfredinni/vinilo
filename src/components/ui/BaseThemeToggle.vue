@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { MoonIcon, SunIcon } from "@heroicons/vue/solid";
+import { MoonIcon, SunIcon } from '@heroicons/vue/solid'
 
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const enabled = ref(isDark);
+const enabled = ref(isDark)
 </script>
 
 <template>
