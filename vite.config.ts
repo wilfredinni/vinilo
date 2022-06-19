@@ -14,7 +14,7 @@ import Prism from "markdown-it-prism";
 import LinkAttributes from "markdown-it-link-attributes";
 
 const markdownWrapperClasses =
-  "prose prose-xl m-auto text-left dark:text-gray-200 mt-10";
+  "prose m-auto text-left dark:text-gray-200 prose-a:text-red-400 dark:prose-strong:text-gray-200";
 
 // https://vitejs.dev/config/
 export default defineConfig({
