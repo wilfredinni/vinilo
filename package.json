@@ -7,6 +7,9 @@
     "build": "vite-ssg build",
     "preview": "vite preview",
     "test": "vitest --run",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -29,6 +32,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/test-utils": "^2.0.0",
     "autoprefixer": "^10.4.7",
+    "c8": "^7.11.3",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.1.1",
@@ -51,6 +55,6 @@
     "vite-ssg": "^0.20.1",
     "vite-ssg-sitemap": "^0.2.7",
     "vitest": "^0.15.2",
-    "vue-tsc": "^0.34.17"
+    "vue-tsc": "^0.37.3"
   }
 }
