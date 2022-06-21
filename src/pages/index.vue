@@ -14,10 +14,12 @@ const { t } = useI18n()
     </h1>
 
     <div
-      class="mt-12 flex justify-center text-lg font-semibold tracking-wider text-gray-700 dark:text-gray-200"
+      class="mt-3 flex justify-center text-lg font-semibold tracking-wider text-gray-700 dark:text-gray-200"
     >
       {{ t('index.description') }}
     </div>
+
+    <user />
 
     <router-link
       to="/about"

@@ -11,7 +11,7 @@ title: About
 
 ```js
 // syntax highlighting example
-function vitesse() {
+function vinilo() {
   const foo = 'bar'
   console.log(foo)
 }
