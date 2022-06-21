@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest --run"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.5",
@@ -31,6 +31,7 @@
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
     "pnpm": "^7.3.0",
