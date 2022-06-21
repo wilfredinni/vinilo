@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.5",
