@@ -13,8 +13,8 @@ module.exports = {
   safelist: [
     'prose',
     'prose-xl',
-    'm-auto',
     'prose-a:text-red-400',
+    'm-auto',
     'text-left',
     'dark:text-gray-200',
     'dark:prose-strong:text-gray-200',
