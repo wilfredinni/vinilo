@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
     BaseThemeToggle: typeof import('./components/ui/BaseThemeToggle.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Switch: typeof import('@headlessui/vue')['Switch']
   }
 }
 
