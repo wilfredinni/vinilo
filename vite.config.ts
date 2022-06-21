@@ -129,4 +129,13 @@ export default defineConfig({
       generateSitemap()
     },
   },
+
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['tests/**/*.test.ts'],
+    environment: 'jsdom',
+    deps: {
+      inline: ['@vue', '@vueuse', 'vue-demi'],
+    },
+  },
 })

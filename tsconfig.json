@@ -18,7 +18,7 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      // "vitest",
+      "vitest",
       "vite/client",
       "vue/ref-macros",
       "vite-plugin-pages/client",
