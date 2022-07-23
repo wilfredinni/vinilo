@@ -9,7 +9,7 @@ import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import Markdown from 'vite-plugin-md'
+import Markdown from 'vite-plugin-vue-markdown'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 
@@ -44,7 +44,6 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
-        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],
@@ -124,7 +123,7 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-    format: 'cjs',
+    // format: 'cjs',
     onFinished() {
       generateSitemap()
     },
@@ -137,5 +136,10 @@ export default defineConfig({
     deps: {
       inline: ['@vue', '@vueuse', 'vue-demi'],
     },
+  },
+
+  ssr: {
+    // TODO: workaround until they support native ESM
+    noExternal: ['workbox-window', /vue-i18n/],
   },
 })

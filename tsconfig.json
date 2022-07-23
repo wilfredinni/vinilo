@@ -37,4 +37,7 @@
     "tailwind.config.js",
     "coverage"
   ],
+  "typeRoots": [
+    "./src/types"
+  ]
 }
