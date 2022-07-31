@@ -123,7 +123,7 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-    // format: 'cjs',
+    format: 'cjs',
     onFinished() {
       generateSitemap()
     },
