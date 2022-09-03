@@ -191,6 +191,7 @@
     "usePointer": true,
     "usePointerSwipe": true,
     "usePreferredColorScheme": true,
+    "usePreferredContrast": true,
     "usePreferredDark": true,
     "usePreferredLanguages": true,
     "usePreferredReducedMotion": true,
